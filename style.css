@@ -1,0 +1,15 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: gray;
+}
+.brand-logo center{
+    font-size: xx-large;
+}
+nav{
+    text-align: center;
+}
+.container{
+    box-sizing: border-box;
+}
