@@ -4,33 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Zone</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Movie Search Website</title>
+    <link rel = "stylesheet" href = "./style.css">
 </head>
-<body>
-    <div class="container">
-        <nav>
-            <div class="nav-wrapper d-flex">
-                <a href="" class="brand-logo center">Movies</a>
-                <h3 id="key"></h3>
+<body>   
+    <div class = "wrapper">
+        <div class = "logo">
+            <div class = "container">
+                <p>Movie<span>Search.</span></p>
             </div>
-        </nav>
-        <div class="main">
-            <div class="row">
-                <div class="col s10 m10">
-                    <input type="text" name="" placeholder="search" id="movie_search">
-                </div>
-                <div class="col s2 m2">
-                    <button class="btn waves-effect waves- btn-large" id="button" onclick="fetchName()" style="background-color: red;">search</button>
+        </div>
+        <div class = "search-container">
+            <div class = "search-element">
+                <h3>Search Movie:</h3>
+                <input type = "text" class = "form-control" placeholder="Search Movie Title ..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
+                <div class = "search-list" id = "search-list">
                 </div>
             </div>
-            <div class="row" id="row-body">
-                <div class="col s12 valign center" id="Isl-roller">
-                    <div class="Ids-roller"></div>
+        </div>
+        <div class = "container">
+            <div class = "result-container">
+                <div class = "result-grid" id = "result-grid">
                 </div>
             </div>
         </div>
     </div>
+    <script src = "./main.js"></script>
 </body>
-<script src="./main.js"></script>
 </html>
